@@ -1,0 +1,45 @@
+.overlay-form-item {
+}
+
+.overlay-form-item li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.overlay-form-item:last-child li:last-child {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.overlay-form-item:last-child li:last-child label {
+  --w: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--w);
+  height: var(--w);
+  margin: 0 auto;
+  border: 2px dotted;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay-form-item li label {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.overlay-form-item li div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.overlay-form-item li input,
+.overlay-form-item li select {
+  padding: 10px 15px;
+}

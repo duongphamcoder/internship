@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="root">
+      <header class="header-wrapper container">
+        <p class="header-item">
+          <span>Student </span>
+          <a href="/" class="header-item-logo"
+            ><ion-icon name="book-sharp"></ion-icon
+          ></a>
+          <span>Manager</span>
+        </p>
+      </header>
+      <section class="container filter-box">
+        <div class="filter-box-item">
+          <input
+            type="text"
+            placeholder="Enter name or code Student..."
+            class="filter-search"
+          />
+          <button class="btn btn-default" id="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="filter-box-item">
+          <button class="btn btn-primary" id="add-btn">new student</button>
+        </div>
+      </section>
+      <section class="overlay">
+        <section class="overlay-wrapper container">
+          <div class="overlay-close">
+            <ion-icon name="close-sharp"></ion-icon>
+          </div>
+          <div class="overlay-form">
+            <ul class="overlay-form-item">
+              <li>
+                <label for="code">Code</label
+                ><input type="text" placeholder="Enter code ...." id="code" />
+              </li>
+              <li>
+                <label for="fname">first name</label
+                ><input
+                  type="text"
+                  placeholder="Enter first name ...."
+                  id="fname"
+                />
+              </li>
+              <li>
+                <label for="lname">last name</label
+                ><input
+                  type="text"
+                  placeholder="Enter lats name ...."
+                  id="lname"
+                />
+              </li>
+              <li>
+                <label for="day">age</label>
+                <div class="">
+                  <select name="" id="day">
+                    <option value="">Day</option>
+                  </select>
+                  <select name="" id="month">
+                    <option value="">Month</option>
+                  </select>
+                  <select name="" id="year">
+                    <option value="">Year</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <label for="gender">gender</label>
+                <select id="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">other</option>
+                </select>
+              </li>
+            </ul>
+            <ul class="overlay-form-item">
+              <li>
+                <label for="class-code">class code</label
+                ><input
+                  type="text"
+                  placeholder="Enter class code ...."
+                  id="class-code"
+                />
+              </li>
+              <li>
+                <label for="specialized">specialized</label
+                ><select name="" id="specialized"></select>
+              </li>
+              <li>
+                <label for="image">select image</label>
+                <input
+                  type="file"
+                  accept="image/png, image/jpeg"
+                  hidden
+                  id="image"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="overlay-button">
+            <button class="btn btn-primary" id="btn-submit">submit</button>
+          </div>
+        </section>
+      </section>
+      <section class="student-wrapper container">
+        <ul class="students"></ul>
+      </section>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
